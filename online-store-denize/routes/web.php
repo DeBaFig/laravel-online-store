@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'App\Http\Controllers\HomeController@index')->name("home.index");
+Route::get('/about', 'App\Http\Controllers\HomeController@about')->name("home.about");
+Route::get('/products', 'App\Http\Controllers\ProductsController@index')->name("products.index");
+Route::get('/products/{id}', 'App\Http\Controllers\ProductsController@show')->name("products.show");
+Route::get('/people', 'App\Http\Controllers\PeopleController@index')->name("people.index");
+Route::get('/people/{id}', 'App\Http\Controllers\PeopleController@show')->name("people.show");
+
