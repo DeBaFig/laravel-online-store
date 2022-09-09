@@ -2,8 +2,6 @@
 @section('title', $viewData["title"])
 @section('subtitle', $viewData["subtitle"])
 @section('content')
-<?php
-?>
 <header class="py-3" style="background-image: url('https://live.staticflickr.com/2303/2523789923_003c6fe325_o.jpg'); background-repeat: no-repeat; background-size: cover;">
    <div class="text-center my-2">
       <img class="img-fluid rounded-circle mb-4" src="{{ asset('assets/people/assets/img/' . $viewData['person']['image'] ) }}" />

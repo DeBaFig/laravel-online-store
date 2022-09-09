@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('title', $viewData["title"])
 @section('content')
-<!-- Product Details Area Start -->
 <div class="single-product-area section-padding-100 clearfix">
     <div class="container-fluid m-5 p-3">
         <div class="row">
@@ -23,13 +22,9 @@
                             <button type="submit" class="btn btn-dark " disabled>Comprar!</button>
                         </form>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Product Details Area End -->
 </div>
 @endsection
