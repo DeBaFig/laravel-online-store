@@ -7,9 +7,12 @@
     <meta name="description" content="" />
     <meta name="author" content="Denize Bassi Figueiredo" />
     <title>@yield('title', $viewData["title"])</title>
-    {{ Html::style('assets/home/assets/favicon.ico')}}
-    {{ Html::style('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css')}}
-    {{ Html::style('assets/home/css/styles.css')}}
+    z<!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{{ asset('//assets/home/assets/favicon.ico') }}" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ asset('//assets/home/css/styles.css') }}" rel="stylesheet" />
 </head>
 
 <body>
@@ -39,8 +42,11 @@
             </div>
         </div>
     </footer>
-    {{ Html::script('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js') }}
-    {{ Html::script('assets/home/js/scripts.js') }}
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    
+    <script src="{{ asset('//assets/home/js/scripts.js') }}"></script>
 </body>
 
 </html>  
